@@ -1,0 +1,135 @@
+/* VARIABLES */
+:root
+{
+    --icon_height: 30px;
+    --dark: #333;
+}
+/* DEFAULTS */
+a
+{
+    text-decoration: none;
+    color: var(--dark);
+}
+/* BODY */
+body
+{
+    margin: 0;
+    position: relative;
+    background: #f0f0f0;
+    font-family: 'roboto', sans-serif;
+}
+/* HEADER */
+header
+{
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+}
+.header
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5%;
+}
+.nav_bar
+{
+    margin-top: 0.5%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    left: 0%;
+    margin-left: 20px;
+    justify-content: flex-start;
+    font-size: 150%;
+    z-index: 1;
+    width: 250px;
+}
+.nav_bar img
+{
+    margin-left: 10px;
+    height: var(--icon_height);
+}
+.search_bar
+{
+    display: flex;
+    margin-top: 0.5%;
+}
+.search_bar input
+{
+    width: 350px;
+    height: var(--icon_height);
+}
+.search_bar img
+{
+    height: 17px;
+}
+.search_bar .search_btn
+{
+    width: 60px;
+    margin-left: -0.5%;
+}
+.search_bar .rec_btn
+{
+    width: 35px;
+    margin-left: 1%;
+    border: none;
+    border-radius: 30px;
+}
+.search_bar .rec_btn img
+{
+    margin-top: 20%;
+}
+.profile_bar
+{
+    margin-top: 0.5%;
+    position: absolute;
+    right: 0%;
+    margin-right: 2%;
+}
+.profile_bar img
+{
+    height: var(--icon_height);
+}
+/* NAVIGATION */
+.side_nav
+{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    margin-top: -0.5%;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transition: 0.5s;
+}
+.side_nav a
+{
+    width: 80%;
+    transition: 0.4s;
+    display: block;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 14px;
+}
+.side_nav img
+{
+    height: 25px;
+    margin-right: 20px;
+}
+.side_nav a:hover, .side_nav .active
+{
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.1);
+}
+.side_nav hr
+{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
