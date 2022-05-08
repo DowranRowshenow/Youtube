@@ -2,6 +2,7 @@
 :root
 {
     --icon_height: 30px;
+    --icon_height_2: 25px;
     --dark: #333;
 }
 /* DEFAULTS */
@@ -38,7 +39,7 @@ header
 }
 .nav_bar
 {
-    border-left: 20px solid white;
+    border-left: 30px solid white;
     border-bottom: 5px solid white;
     background-color: white;
     position: absolute;
@@ -47,7 +48,7 @@ header
     justify-content: flex-start;
     font-size: 150%;
     z-index: 2;
-    width: 230px;
+    width: 220px;
 }
 .nav_bar *
 {
@@ -55,8 +56,9 @@ header
 }
 .nav_bar img
 {
-    margin-left: 10px;
-    height: var(--icon_height);
+    margin-top: 10px;
+    margin-left: 30px;
+    height: var(--icon_height_2);
 }
 .search_bar
 {
@@ -76,7 +78,7 @@ header
 .search_bar .search_btn
 {
     width: 60px;
-    margin-left: -0.5%;
+    margin-left: -5px;
 }
 .search_bar .rec_btn
 {
@@ -91,7 +93,7 @@ header
 }
 .profile_bar
 {
-    top: 10%;
+    top: 8px;
     display: flex;
     justify-content: center;
     margin-top: 0.5%;
@@ -101,8 +103,8 @@ header
 }
 .profile_bar div
 {
-    margin-top: -3px;
-    width: 35px;
+    margin-top: -5px;
+    width: 32px;
     border-radius: 30px;
     margin-left: 10px;
     background: rgb(195, 195, 195);
@@ -110,12 +112,12 @@ header
 .profile_bar div img
 {
     margin-top: 3px;
-    margin-left: 2px;
+    margin-left: 3px;
 }
 .profile_bar img
 {
     margin-left: 10px;
-    height: var(--icon_height);
+    height: var(--icon_height_2);
 }
 /* NAVIGATION */
 .side_nav
@@ -123,14 +125,14 @@ header
     height: 100%;
     width: 0px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     overflow-x: hidden;
-    margin-top: -1px;
+    margin-top: -10px;
     padding-top: 1%;
     display: flex;
     flex-direction: column;
     background-color: white;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 .side_nav a
 {
@@ -146,6 +148,7 @@ header
 }
 .side_nav img
 {
+    margin-left: 10px;
     height: 25px;
     margin-right: 20px;
 }
@@ -169,4 +172,40 @@ header
 .side_nav .last
 {
     margin-top: 50px;
+}
+/* HAMBURGER */
+.side_bar
+{
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    margin-top: -10px;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.side_bar a
+{
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    display: block;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #242424;
+    font-size: 12px;
+}
+.side_bar img
+{
+    height: 30px;
+}
+.side_bar a:hover, .side_bar .active
+{
+    font-weight: 700;
 }
