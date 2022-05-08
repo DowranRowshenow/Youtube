@@ -28,12 +28,15 @@ body
 /* HEADER */
 header
 {
+    top: 0; /* required */
+    position: -webkit-sticky;
+    position: sticky;
     background-color: white;
     border-bottom: 1px solid #aaa;
 }
 .header
 {
-    position: relative;
+
     display: flex;
     justify-content: center;
     margin-bottom: 0.5%;
@@ -108,7 +111,7 @@ header
     width: 32px;
     border-radius: 30px;
     margin-left: 10px;
-    background: rgb(195, 195, 195);
+    background: rgb(200, 200, 200);
 }
 .profile_bar div img
 {
@@ -133,12 +136,12 @@ header
     display: flex;
     flex-direction: column;
     background-color: white;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .side_nav a
 {
     width: 80%;
-    transition: 0.4s;
+    transition: 0.3s;
     display: block;
     padding: 10px 20px;
     display: flex;
@@ -213,6 +216,7 @@ header
 /* MAIN */
 main
 {
+    width: 100%;
     margin-left: 80px;
 }
 .category
@@ -226,11 +230,99 @@ main
 {
     padding: 5px 10px;
     margin: 10px 0px 0px 10px;
-    border: 1px solid var(--dark);
+    border: 1px solid #aaa;
     border-radius: 30px;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(240, 240, 240);
+}
+.category a:hover
+{
+    background-color: rgb(200, 200, 200);
+    font-weight: bold;
+}
+.category .active
+{
+    background-color: var(--dark);
+    color: white;
 }
 .main
 {
-
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+}
+.main .container
+{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.main .container img
+{
+    width: 250px;
+    height: 150px;
+}
+.main .container .info
+{
+    display: flex;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.main .container .info img
+{
+    border-radius: 30px;
+    width: 36px;
+    height: 36px;
+}
+.main .container .info div
+{
+    margin-left: 10px;
+}
+.main .container .info div a
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+.main .container .info div h5
+{
+    margin: 5px 0px 0px 0px;
+}
+@media screen and (max-width: 950px)
+{
+    .search_bar input
+    {
+        width: 300px;
+        height: var(--icon_height);
+    }
+}
+@media screen and (max-width: 900px)
+{
+    .search_bar input
+    {
+        width: 250px;
+        height: var(--icon_height);
+    }
+}
+@media screen and (max-width: 850px)
+{
+    .search_bar input
+    {
+        width: 200px;
+        height: var(--icon_height);
+    }
+}
+@media screen and (max-width: 800px)
+{
+    .search_bar input
+    {
+        width: 150px;
+        height: var(--icon_height);
+    }
+}
+@media screen and (max-width: 760px)
+{
+    .search_bar input
+    {
+        width: 100px;
+        height: var(--icon_height);
+    }
 }
