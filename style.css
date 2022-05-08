@@ -216,6 +216,7 @@ header
 /* MAIN */
 main
 {
+    transition: 0.3s;
     width: 100%;
     margin-left: 80px;
 }
