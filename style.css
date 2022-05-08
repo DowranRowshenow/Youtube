@@ -9,6 +9,7 @@
 ::-webkit-scrollbar 
 {
     width: 0;
+    height: 10px;
     background: transparent;
 }
 a
@@ -208,4 +209,28 @@ header
 .side_bar a:hover, .side_bar .active
 {
     font-weight: 700;
+}
+/* MAIN */
+main
+{
+    margin-left: 80px;
+}
+.category
+{
+    overflow: auto;
+    background-color: white;
+    display: flex;
+    border-bottom: 1px solid #aaa;
+}
+.category a
+{
+    padding: 5px 10px;
+    margin: 10px 0px 0px 10px;
+    border: 1px solid var(--dark);
+    border-radius: 30px;
+    background-color: rgb(241, 241, 241);
+}
+.main
+{
+
 }

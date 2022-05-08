@@ -1,3 +1,4 @@
+// NAV CLICK
 function sideNav() 
 {
     var side_nav = document.getElementById("side_nav");
