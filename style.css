@@ -217,7 +217,7 @@ header
 main
 {
     transition: 0.3s;
-    width: 100%;
+    width: auto;
     margin-left: 80px;
 }
 .category
@@ -249,7 +249,7 @@ main
 {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 0fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
 }
 .main .container
 {

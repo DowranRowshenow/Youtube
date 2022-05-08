@@ -5,6 +5,7 @@ function sideNav()
     var side_bar = document.getElementById("side_bar");
     var active = document.getElementById("active");
     var main = document.getElementById("main");
+    var main_main = document.getElementById("main_main");
     if (side_nav.style.width == "250px")
     {
         side_nav.style.width = "0px";
