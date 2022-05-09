@@ -33,7 +33,7 @@ header
     position: -webkit-sticky;
     position: sticky;
     background-color: white;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 2px solid rgb(230, 230, 230);
 }
 .header
 {
@@ -74,6 +74,7 @@ header
 {
     width: 350px;
     height: var(--icon_height);
+    border: 1px solid rgb(230, 230, 230);
 }
 .search_bar img
 {
@@ -83,6 +84,7 @@ header
 {
     width: 60px;
     margin-left: -5px;
+    border: 1px solid rgb(194, 194, 194);
 }
 .search_bar .rec_btn
 {
@@ -225,7 +227,7 @@ main
     overflow: auto;
     background-color: white;
     display: flex;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 2px solid rgb(230, 230, 230);
 }
 .category a
 {
