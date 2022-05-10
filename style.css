@@ -3,6 +3,7 @@
 {
     --icon_height: 30px;
     --icon_height_2: 25px;
+    --icon_height_3: 37px;
     --dark: #333;
 }
 /* DEFAULTS */
@@ -66,6 +67,7 @@ header
 }
 .search_bar
 {
+    margin-left: 100px;
     z-index: 1;
     display: flex;
     margin-top: 0.5%;
@@ -76,6 +78,10 @@ header
     height: var(--icon_height);
     border: 1px solid rgb(230, 230, 230);
 }
+.search_bar input:hover
+{
+    border: 1px solid rgb(150, 150, 150);
+}
 .search_bar img
 {
     height: 17px;
@@ -83,8 +89,12 @@ header
 .search_bar .search_btn
 {
     width: 60px;
-    margin-left: -5px;
-    border: 1px solid rgb(194, 194, 194);
+    margin-left: -1px;
+    border: 1px solid rgb(200, 200, 200);
+}
+.search_bar .search_btn:hover
+{
+    border: 1px solid rgb(150, 150, 150);
 }
 .search_bar .rec_btn
 {
@@ -92,6 +102,10 @@ header
     margin-left: 1%;
     border: none;
     border-radius: 30px;
+}
+.search_bar .rec_btn:hover
+{
+    border: 1px solid rgb(150, 150, 150);
 }
 .search_bar .rec_btn img
 {
@@ -115,8 +129,13 @@ header
     margin-left: 10px;
     background: rgb(200, 200, 200);
 }
+.profile_bar *:hover
+{
+    background: rgb(175, 175, 175);
+}
 .profile_bar div img
 {
+    border-radius: 5px;
     margin-top: 3px;
     margin-left: 3px;
 }
@@ -250,8 +269,9 @@ main
 .main
 {
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 2fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .main .container
 {
@@ -259,10 +279,18 @@ main
     flex-direction: column;
     margin: 20px;
 }
+.main .container:hover
+{
+    background-color: rgb(200, 200, 200);
+}
 .main .container img
 {
     width: 250px;
     height: 150px;
+}
+.main .container img:hover
+{
+    opacity: 0.5;
 }
 .main .container .info
 {
@@ -291,43 +319,32 @@ main
     margin: 5px 0px 0px 0px;
 }
 /* RESPONSIVE */
-@media screen and (max-width: 950px)
-{
-    .search_bar input
-    {
-        width: 300px;
-        height: var(--icon_height);
-    }
-}
 @media screen and (max-width: 900px)
 {
     .search_bar input
     {
-        width: 250px;
-        height: var(--icon_height);
+        width: 300px;
+        height: var(--icon_height_3);
     }
 }
 @media screen and (max-width: 850px)
 {
     .search_bar input
     {
-        width: 200px;
-        height: var(--icon_height);
+        width: 250px;
     }
 }
 @media screen and (max-width: 800px)
 {
     .search_bar input
     {
-        width: 150px;
-        height: var(--icon_height);
+        width: 200px;
     }
 }
 @media screen and (max-width: 760px)
 {
     .search_bar input
     {
-        width: 100px;
-        height: var(--icon_height);
+        width: 150px;
     }
 }
