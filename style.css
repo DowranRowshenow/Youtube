@@ -347,4 +347,43 @@ main
     {
         width: 150px;
     }
+    .profile_bar img
+    {
+        visibility: hidden;
+    }
+    .profile_bar div img
+    {
+        visibility: visible;
+    }
+    .nav_bar
+    {
+        margin-left: -50px;
+        background-color: transparent;
+    }
+    .nav_bar .toggle_btn
+    {
+        visibility: hidden;
+    }
+    .side_bar
+    {
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        bottom: 0;
+    }
+    main
+    {
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 560px)
+{
+    .search_bar
+    {
+        margin-left: 0;
+    }
+    .nav_bar
+    {
+        visibility: hidden;
+    }
 }
