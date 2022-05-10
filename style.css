@@ -371,6 +371,11 @@ main
         flex-direction: row;
         bottom: 0;
     }
+    .side_nav
+    {
+        width: 0px;
+        visibility: hidden;
+    }
     main
     {
         margin-left: 0px;

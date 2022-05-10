@@ -1,11 +1,13 @@
+// ATTACHMENTS
+const side_nav = document.getElementById("side_nav"),
+side_bar = document.getElementById("side_bar"),
+active = document.getElementById("active"),
+main = document.getElementById("main"),
+main_main = document.getElementById("main_main");
+
 // NAV CLICK
 function sideNav() 
 {
-    var side_nav = document.getElementById("side_nav");
-    var side_bar = document.getElementById("side_bar");
-    var active = document.getElementById("active");
-    var main = document.getElementById("main");
-    var main_main = document.getElementById("main_main");
     if (side_nav.style.width == "250px")
     {
         side_nav.style.width = "0px";
@@ -21,3 +23,19 @@ function sideNav()
         main.style.marginLeft = "250px";
     }
 }
+
+// EVENTS
+$(window).on('resize load', function () 
+{
+    if ($(window).width() < 760) 
+    {
+        main.style.marginLeft = "0px";
+    } 
+    if ($(window).width() > 760) 
+    {
+        if (!side_nav.style.width == "250px")
+        {
+            main.style.marginLeft = "80px";
+        }
+    }
+ });  
